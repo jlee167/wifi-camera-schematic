@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# MAX16150BWT+
+#
+DEF MAX16150BWT+ U 0 40 Y Y 1 L N
+F0 "U" -500 339 50 H V L BNN
+F1 "MAX16150BWT+" -500 -557 50 H V L BNN
+F2 "BGA6N40P2X3_82X123X69N" 0 0 50 H I L BNN
+F3 "Maxim Integrated" 0 0 50 H I L BNN
+F4 "None" 0 0 50 H I L BNN
+F5 "Supervisor Open Drain, Push-Pull 1 Channel 6-WLP _0.83x1.24_" 0 0 50 H I L BNN
+F6 "Unavailable" 0 0 50 H I L BNN
+F7 "WLP-6 Maxim" 0 0 50 H I L BNN
+F8 "MAX16150BWT+" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -500 300 500 300 N
+P 2 0 0 10 500 300 500 -400 N
+P 2 0 0 10 500 -400 -500 -400 N
+P 2 0 0 10 -500 -400 -500 300 N
+X ~CLR~ B3 -700 0 200 R 40 40 0 0 I 
+X ~PB_IN~ A3 -700 -100 200 R 40 40 0 0 I 
+X VCC A1 700 200 200 L 40 40 0 0 W 
+X ~INT~ B2 700 0 200 L 40 40 0 0 O 
+X OUT B1 700 -100 200 L 40 40 0 0 O 
+X GND A2 700 -300 200 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library

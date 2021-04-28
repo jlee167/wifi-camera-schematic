@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# ECS-2520S33-400-FN-TR
+#
+DEF ECS-2520S33-400-FN-TR Y 0 40 Y Y 1 L N
+F0 "Y" -611 321 50 H V L BNN
+F1 "ECS-2520S33-400-FN-TR" -601 -491 50 H V L BNN
+F2 "OSC_ECS-2520S33-400-FN-TR" 0 0 50 H I L BNN
+F3 "Manufacturer Recommendations" 0 0 50 H I L BNN
+F4 "ECS INC" 0 0 50 H I L BNN
+F5 "2017" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 5 -600 300 600 300 N
+P 2 0 0 5 600 300 600 -400 N
+P 2 0 0 5 600 -400 -600 -400 N
+P 2 0 0 5 -600 -400 -600 300 N
+X TRI_STATE 1 -800 -100 200 R 40 40 0 0 I 
+X OUTPUT 3 800 100 200 L 40 40 0 0 O 
+X VDD 4 -800 100 200 R 40 40 0 0 I 
+X GND 2 800 -300 200 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library

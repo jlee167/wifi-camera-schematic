@@ -1,0 +1,2323 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND013
+U 1 1 5F497517
+P 4900 2800
+F 0 "#GND013" H 4900 2800 45  0001 L BNN
+F 1 "GND" H 4900 2730 45  0000 C CNN
+F 2 "" H 4900 2800 60  0001 C CNN
+F 3 "" H 4900 2800 60  0001 C CNN
+	1    4900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND07
+U 1 1 5F4D93E4
+P 9900 5000
+F 0 "#GND07" H 9900 5000 45  0001 L BNN
+F 1 "GND" H 9900 4930 45  0000 C CNN
+F 2 "" H 9900 5000 60  0001 C CNN
+F 3 "" H 9900 5000 60  0001 C CNN
+	1    9900 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 4800 9900 4900
+Text GLabel 10550 4400 2    50   Input ~ 0
+cam_avdd
+Text GLabel 10500 5600 2    50   Input ~ 0
+cam_dvdd
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND06
+U 1 1 5F50ABE4
+P 9850 6300
+F 0 "#GND06" H 9850 6300 45  0001 L BNN
+F 1 "GND" H 9850 6230 45  0000 C CNN
+F 2 "" H 9850 6300 60  0001 C CNN
+F 3 "" H 9850 6300 60  0001 C CNN
+	1    9850 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 5600 10300 5600
+$Comp
+L Device:C_Small C11
+U 1 1 5FD18FA1
+P 10350 4800
+F 0 "C11" H 10442 4846 50  0000 L CNN
+F 1 "1uf" H 10442 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10350 4800 50  0001 C CNN
+F 3 "~" H 10350 4800 50  0001 C CNN
+	1    10350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5FD0D019
+P 9400 4800
+F 0 "C6" H 9492 4846 50  0000 L CNN
+F 1 "1uf" H 9492 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9400 4800 50  0001 C CNN
+F 3 "~" H 9400 4800 50  0001 C CNN
+	1    9400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 5600 8950 5550
+$Comp
+L power:+3V3 #PWR05
+U 1 1 5F4FEFDC
+P 8950 5550
+F 0 "#PWR05" H 8950 5400 50  0001 C CNN
+F 1 "+3V3" V 8965 5678 50  0000 L CNN
+F 2 "" H 8950 5550 50  0001 C CNN
+F 3 "" H 8950 5550 50  0001 C CNN
+	1    8950 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR04
+U 1 1 5F4C15CC
+P 9400 4150
+F 0 "#PWR04" H 9400 4000 50  0001 C CNN
+F 1 "+3V3" V 9415 4278 50  0000 L CNN
+F 2 "" H 9400 4150 50  0001 C CNN
+F 3 "" H 9400 4150 50  0001 C CNN
+	1    9400 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 6200 9850 6200
+Connection ~ 9850 6200
+Wire Wire Line
+	9850 6200 9400 6200
+Wire Wire Line
+	10300 6100 10300 6200
+Wire Wire Line
+	9400 6100 9400 6200
+Wire Wire Line
+	9850 6000 9850 6200
+Wire Wire Line
+	10350 4900 9900 4900
+Connection ~ 9900 4900
+Wire Wire Line
+	9900 4900 9400 4900
+Wire Wire Line
+	10350 4400 10550 4400
+Wire Wire Line
+	9400 4400 9600 4400
+$Comp
+L Device:C_Small C7
+U 1 1 5FE9E27E
+P 9400 6000
+F 0 "C7" H 9492 6046 50  0000 L CNN
+F 1 "1uf" H 9492 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9400 6000 50  0001 C CNN
+F 3 "~" H 9400 6000 50  0001 C CNN
+	1    9400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5FEAC274
+P 10300 6000
+F 0 "C10" H 10392 6046 50  0000 L CNN
+F 1 "1uf" H 10392 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10300 6000 50  0001 C CNN
+F 3 "~" H 10300 6000 50  0001 C CNN
+	1    10300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:SPH0645LM4H-B-SPH0645LM4H-B MK1
+U 1 1 5E948805
+P 5900 5350
+F 0 "MK1" H 5900 5817 50  0000 C CNN
+F 1 "SPH0645LM4H-B" H 5900 5726 50  0000 C CNN
+F 2 "guardiancam:MIC_SPH0645LM4H-B" H 5900 5350 50  0001 L BNN
+F 3 "SPH0645LM4H-B" H 5900 5350 50  0001 L BNN
+F 4 "Unavailable" H 5900 5350 50  0001 L BNN "Field4"
+F 5 "SIP-7 Bourns" H 5900 5350 50  0001 L BNN "Field5"
+F 6 "Mic Mems Digital I2s Omni -26db" H 5900 5350 50  0001 L BNN "Field6"
+F 7 "None" H 5900 5350 50  0001 L BNN "Field7"
+F 8 "Knowles" H 5900 5350 50  0001 L BNN "Field8"
+	1    5900 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5150 7100 5150
+Wire Wire Line
+	4700 5450 5200 5450
+Wire Wire Line
+	4700 5250 5200 5250
+$Comp
+L Device:C_Small C9
+U 1 1 5ED79760
+P 7350 4800
+F 0 "C9" H 7442 4846 50  0000 L CNN
+F 1 "200pf" H 7442 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7350 4800 50  0001 C CNN
+F 3 "~" H 7350 4800 50  0001 C CNN
+	1    7350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 5ED98648
+P 7700 4800
+F 0 "C12" H 7792 4846 50  0000 L CNN
+F 1 "1uf" H 7792 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7700 4800 50  0001 C CNN
+F 3 "~" H 7700 4800 50  0001 C CNN
+	1    7700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND011
+U 1 1 5EDB7633
+P 7700 5050
+F 0 "#GND011" H 7700 5050 45  0001 L BNN
+F 1 "GND" H 7700 4980 45  0000 C CNN
+F 2 "" H 7700 5050 60  0001 C CNN
+F 3 "" H 7700 5050 60  0001 C CNN
+	1    7700 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR06
+U 1 1 5EDD8A66
+P 7700 4650
+F 0 "#PWR06" H 7700 4500 50  0001 C CNN
+F 1 "+3V3" V 7715 4778 50  0000 L CNN
+F 2 "" H 7700 4650 50  0001 C CNN
+F 3 "" H 7700 4650 50  0001 C CNN
+	1    7700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4900 7700 4900
+Wire Wire Line
+	7700 4950 7700 4900
+Connection ~ 7700 4900
+Wire Wire Line
+	7700 4700 7700 4650
+Wire Wire Line
+	7700 4700 7350 4700
+Connection ~ 7700 4700
+Wire Wire Line
+	7350 4700 7100 4700
+Wire Wire Line
+	7100 4700 7100 5150
+Connection ~ 7350 4700
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND09
+U 1 1 5EE9250E
+P 7300 5750
+F 0 "#GND09" H 7300 5750 45  0001 L BNN
+F 1 "GND" H 7300 5680 45  0000 C CNN
+F 2 "" H 7300 5750 60  0001 C CNN
+F 3 "" H 7300 5750 60  0001 C CNN
+	1    7300 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 5550 7300 5650
+Wire Wire Line
+	6600 5550 7300 5550
+Text Label 4750 5250 0    50   ~ 0
+audio_ws
+Text Label 4750 5450 0    50   ~ 0
+audio_clk
+$Comp
+L Device:R_Small R5
+U 1 1 5EEDB21A
+P 7550 5500
+F 0 "R5" H 7609 5546 50  0000 L CNN
+F 1 "100k" H 7609 5455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7550 5500 50  0001 C CNN
+F 3 "~" H 7550 5500 50  0001 C CNN
+	1    7550 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND010
+U 1 1 5EEFC3C6
+P 7550 5700
+F 0 "#GND010" H 7550 5700 45  0001 L BNN
+F 1 "GND" H 7550 5630 45  0000 C CNN
+F 2 "" H 7550 5700 60  0001 C CNN
+F 3 "" H 7550 5700 60  0001 C CNN
+	1    7550 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5EFCFB07
+P 7350 5350
+F 0 "R4" V 7546 5350 50  0000 C CNN
+F 1 "51" V 7455 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7350 5350 50  0001 C CNN
+F 3 "~" H 7350 5350 50  0001 C CNN
+	1    7350 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 5400 7550 5350
+Wire Wire Line
+	7550 5350 7450 5350
+Wire Wire Line
+	7250 5350 6600 5350
+Text Label 7550 5350 0    50   ~ 0
+audio_sd
+$Comp
+L power:+BATT #PWR02
+U 1 1 5F3ABB13
+P 800 -2200
+F 0 "#PWR02" H 800 -2350 50  0001 C CNN
+F 1 "+BATT" H 815 -2027 50  0000 C CNN
+F 2 "" H 800 -2200 50  0001 C CNN
+F 3 "" H 800 -2200 50  0001 C CNN
+	1    800  -2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 -1450 4000 -1450
+Wire Wire Line
+	4000 -1450 4000 -1350
+$Comp
+L Device:C C15
+U 1 1 5F505691
+P 4350 -1900
+F 0 "C15" H 4465 -1854 50  0000 L CNN
+F 1 "10uf" H 4465 -1945 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4388 -2050 50  0001 C CNN
+F 3 "~" H 4350 -1900 50  0001 C CNN
+	1    4350 -1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F522F9B
+P 800 -1900
+F 0 "C3" H 915 -1854 50  0000 L CNN
+F 1 "10uf" H 915 -1945 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 838 -2050 50  0001 C CNN
+F 3 "~" H 800 -1900 50  0001 C CNN
+	1    800  -1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND014
+U 1 1 5F5616E8
+P 4350 -1650
+F 0 "#GND014" H 4350 -1650 45  0001 L BNN
+F 1 "GND" H 4350 -1720 45  0000 C CNN
+F 2 "" H 4350 -1650 60  0001 C CNN
+F 3 "" H 4350 -1650 60  0001 C CNN
+	1    4350 -1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND03
+U 1 1 5F57F66E
+P 800 -1650
+F 0 "#GND03" H 800 -1650 45  0001 L BNN
+F 1 "GND" H 800 -1720 45  0000 C CNN
+F 2 "" H 800 -1650 60  0001 C CNN
+F 3 "" H 800 -1650 60  0001 C CNN
+	1    800  -1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  -2200 800  -2050
+$Comp
+L power:+3V3 #PWR010
+U 1 1 5F69E0F5
+P 4350 -2150
+F 0 "#PWR010" H 4350 -2300 50  0001 C CNN
+F 1 "+3V3" V 4365 -2022 50  0000 L CNN
+F 2 "" H 4350 -2150 50  0001 C CNN
+F 3 "" H 4350 -2150 50  0001 C CNN
+	1    4350 -2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AP2127K-1.5 U3
+U 1 1 5F6ADE44
+P 9850 5700
+F 0 "U3" H 9850 6042 50  0000 C CNN
+F 1 "AP2127K-1.5" H 9850 5951 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9850 6025 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2127.pdf" H 9850 5800 50  0001 C CNN
+	1    9850 5700
+	1    0    0    -1  
+$EndComp
+Text Label 800  1950 0    50   ~ 0
+wifi_en
+Text Label 3250 2250 0    50   ~ 0
+esp_dbg_rx
+Text Label 3250 2050 0    50   ~ 0
+esp_dbg_tx
+Wire Wire Line
+	5350 -2100 5350 -2000
+$Comp
+L Device:R_US R14
+U 1 1 5F8AD7F9
+P 5350 -2250
+F 0 "R14" H 5418 -2204 50  0000 L CNN
+F 1 "250" H 5418 -2295 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5390 -2260 50  0001 C CNN
+F 3 "~" H 5350 -2250 50  0001 C CNN
+	1    5350 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5F8AD7FF
+P 5350 -1850
+F 0 "D6" V 5389 -1967 50  0000 R CNN
+F 1 "LG R971-KN-1 " V 5298 -1967 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 5350 -1850 50  0001 C CNN
+F 3 "~" H 5350 -1850 50  0001 C CNN
+	1    5350 -1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5F8CF066
+P 5350 -2500
+F 0 "#PWR0101" H 5350 -2650 50  0001 C CNN
+F 1 "+3V3" V 5365 -2372 50  0000 L CNN
+F 2 "" H 5350 -2500 50  0001 C CNN
+F 3 "" H 5350 -2500 50  0001 C CNN
+	1    5350 -2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0101
+U 1 1 5F8F085B
+P 5350 -1300
+F 0 "#GND0101" H 5350 -1300 45  0001 L BNN
+F 1 "GND" H 5350 -1370 45  0000 C CNN
+F 2 "" H 5350 -1300 60  0001 C CNN
+F 3 "" H 5350 -1300 60  0001 C CNN
+	1    5350 -1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 -2500 5350 -2400
+Wire Wire Line
+	5350 -1700 5350 -1400
+Wire Wire Line
+	9250 -1900 9850 -1900
+Wire Wire Line
+	2100 -1950 1600 -1950
+Text Label 1650 -1950 0    50   ~ 0
+pwr_en
+Text Label 9600 -1900 0    50   ~ 0
+pwr_en
+$Comp
+L LD39200PU33R:LD39200PU33R U11
+U 1 1 616325F7
+P 2800 -1750
+F 0 "U11" H 2800 -1083 50  0000 C CNN
+F 1 "LD39200PU33R" H 2800 -1174 50  0000 C CNN
+F 2 "guardiancam:LD39200PU33R" H 2800 -1750 50  0001 L BNN
+F 3 "0.34" H 2800 -1750 50  0001 L BNN
+F 4 "" H 2800 -1750 50  0001 L BNN "Field4"
+F 5 "0.3" H 2800 -1750 50  0001 L BNN "Field5"
+F 6 "" H 2800 -1750 50  0001 L BNN "Field6"
+F 7 "2.9" H 2800 -1750 50  0001 L BNN "Field7"
+F 8 "" H 2800 -1750 50  0001 L BNN "Field8"
+F 9 "IPC 7351B" H 2800 -1750 50  0001 L BNN "Field9"
+F 10 "" H 2800 -1750 50  0001 L BNN "Field10"
+F 11 "" H 2800 -1750 50  0001 L BNN "Field11"
+F 12 "0.95" H 2800 -1750 50  0001 L BNN "Field12"
+F 13 "1.0" H 2800 -1750 50  0001 L BNN "Field13"
+F 14 "0.45" H 2800 -1750 50  0001 L BNN "Field14"
+F 15 "" H 2800 -1750 50  0001 L BNN "Field15"
+F 16 "" H 2800 -1750 50  0001 L BNN "Field16"
+F 17 "" H 2800 -1750 50  0001 L BNN "Field17"
+F 18 "" H 2800 -1750 50  0001 L BNN "Field18"
+F 19 "3.1" H 2800 -1750 50  0001 L BNN "Field19"
+F 20 "3.0" H 2800 -1750 50  0001 L BNN "Field20"
+F 21 "ST Microelectronics" H 2800 -1750 50  0001 L BNN "Field21"
+F 22 "6.0" H 2800 -1750 50  0001 L BNN "Field22"
+F 23 "" H 2800 -1750 50  0001 L BNN "Field23"
+F 24 "0.5" H 2800 -1750 50  0001 L BNN "Field24"
+F 25 "2.9" H 2800 -1750 50  0001 L BNN "Field25"
+F 26 "" H 2800 -1750 50  0001 L BNN "Field26"
+F 27 "" H 2800 -1750 50  0001 L BNN "Field27"
+F 28 "3" H 2800 -1750 50  0001 L BNN "Field28"
+F 29 "" H 2800 -1750 50  0001 L BNN "Field29"
+F 30 "0.4" H 2800 -1750 50  0001 L BNN "Field30"
+F 31 "" H 2800 -1750 50  0001 L BNN "Field31"
+F 32 "" H 2800 -1750 50  0001 L BNN "Field32"
+F 33 "" H 2800 -1750 50  0001 L BNN "Field33"
+F 34 "2.365" H 2800 -1750 50  0001 L BNN "Field34"
+F 35 "0.23" H 2800 -1750 50  0001 L BNN "Field35"
+F 36 "1.625" H 2800 -1750 50  0001 L BNN "Field36"
+F 37 "" H 2800 -1750 50  0001 L BNN "Field37"
+F 38 "3.1" H 2800 -1750 50  0001 L BNN "Field38"
+F 39 "3.0" H 2800 -1750 50  0001 L BNN "Field39"
+F 40 "" H 2800 -1750 50  0001 L BNN "Field40"
+F 41 "" H 2800 -1750 50  0001 L BNN "Field41"
+F 42 "" H 2800 -1750 50  0001 L BNN "Field42"
+F 43 "" H 2800 -1750 50  0001 L BNN "Field43"
+F 44 "1.0mm" H 2800 -1750 50  0001 L BNN "Field44"
+F 45 "" H 2800 -1750 50  0001 L BNN "Field45"
+	1    2800 -1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0109
+U 1 1 617C9C19
+P 2000 -2350
+F 0 "#PWR0109" H 2000 -2500 50  0001 C CNN
+F 1 "+3V3" V 2015 -2222 50  0000 L CNN
+F 2 "" H 2000 -2350 50  0001 C CNN
+F 3 "" H 2000 -2350 50  0001 C CNN
+	1    2000 -2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 -2350 2000 -1750
+Wire Wire Line
+	2000 -1750 2100 -1750
+$Comp
+L power:+3V3 #PWR0110
+U 1 1 61BF24F3
+P 7550 -2600
+F 0 "#PWR0110" H 7550 -2750 50  0001 C CNN
+F 1 "+3V3" V 7565 -2472 50  0000 L CNN
+F 2 "" H 7550 -2600 50  0001 C CNN
+F 3 "" H 7550 -2600 50  0001 C CNN
+	1    7550 -2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R6
+U 1 1 61C818AA
+P 7550 -2350
+F 0 "R6" H 7618 -2304 50  0000 L CNN
+F 1 "1k" H 7618 -2395 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7590 -2360 50  0001 C CNN
+F 3 "~" H 7550 -2350 50  0001 C CNN
+	1    7550 -2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7550 -2200 7550 -2100
+Wire Wire Line
+	7550 -2600 7550 -2500
+$Comp
+L XC6192:XC6192 U2
+U 1 1 61E949F5
+P 8850 -2050
+F 0 "U2" H 8850 -1675 50  0000 C CNN
+F 1 "XC6192" H 8850 -1766 50  0000 C CNN
+F 2 "guardiancam:xc6192" H 8850 -1800 50  0001 C CNN
+F 3 "" H 8850 -1800 50  0001 C CNN
+	1    8850 -2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0102
+U 1 1 61F0639F
+P 10550 -2400
+F 0 "#PWR0102" H 10550 -2550 50  0001 C CNN
+F 1 "+BATT" H 10565 -2227 50  0000 C CNN
+F 2 "" H 10550 -2400 50  0001 C CNN
+F 3 "" H 10550 -2400 50  0001 C CNN
+	1    10550 -2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 -2200 10550 -2400
+$Comp
+L Device:C C4
+U 1 1 61F6621F
+P 10550 -2000
+F 0 "C4" H 10665 -1954 50  0000 L CNN
+F 1 "0.1uf" H 10665 -2045 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10588 -2150 50  0001 C CNN
+F 3 "~" H 10550 -2000 50  0001 C CNN
+	1    10550 -2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0102
+U 1 1 61FC69EC
+P 10550 -1650
+F 0 "#GND0102" H 10550 -1650 45  0001 L BNN
+F 1 "GND" H 10550 -1720 45  0000 C CNN
+F 2 "" H 10550 -1650 60  0001 C CNN
+F 3 "" H 10550 -1650 60  0001 C CNN
+	1    10550 -1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 -1850 10550 -1750
+Wire Wire Line
+	8450 -1900 8200 -1900
+Wire Wire Line
+	8200 -1900 8200 -1500
+Wire Wire Line
+	8450 -2000 8200 -2000
+Wire Wire Line
+	8200 -2000 8200 -1900
+Connection ~ 8200 -1900
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0103
+U 1 1 62151A4D
+P 8200 -1400
+F 0 "#GND0103" H 8200 -1400 45  0001 L BNN
+F 1 "GND" H 8200 -1470 45  0000 C CNN
+F 2 "" H 8200 -1400 60  0001 C CNN
+F 3 "" H 8200 -1400 60  0001 C CNN
+	1    8200 -1400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9250 -2100
+Wire Wire Line
+	7550 -2100 8450 -2100
+Wire Wire Line
+	-100 -4550 -100 -4650
+Wire Wire Line
+	900  -4550 -100 -4550
+Wire Wire Line
+	900  -4650 -100 -4650
+Wire Wire Line
+	3800 -3850 3800 -3700
+Wire Wire Line
+	3800 -4550 3800 -4250
+Connection ~ 3800 -4550
+Connection ~ 3250 -4550
+Wire Wire Line
+	3250 -4550 3800 -4550
+Wire Wire Line
+	3250 -4050 3250 -3700
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0105
+U 1 1 62F6A866
+P 3800 -3600
+F 0 "#GND0105" H 3800 -3600 45  0001 L BNN
+F 1 "GND" H 3800 -3670 45  0000 C CNN
+F 2 "" H 3800 -3600 60  0001 C CNN
+F 3 "" H 3800 -3600 60  0001 C CNN
+	1    3800 -3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 -4450
+Wire Wire Line
+	3250 -4450 3250 -4350
+Wire Wire Line
+	3250 -4550 3250 -4450
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0106
+U 1 1 62DF1EC6
+P 3250 -3600
+F 0 "#GND0106" H 3250 -3600 45  0001 L BNN
+F 1 "GND" H 3250 -3670 45  0000 C CNN
+F 2 "" H 3250 -3600 60  0001 C CNN
+F 3 "" H 3250 -3600 60  0001 C CNN
+	1    3250 -3600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2500 -4850
+NoConn ~ 2500 -4950
+Wire Wire Line
+	3250 -4450 2500 -4450
+Wire Wire Line
+	2500 -4550 3250 -4550
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0109
+U 1 1 62BC1694
+P 350 -3600
+F 0 "#GND0109" H 350 -3600 45  0001 L BNN
+F 1 "GND" H 350 -3670 45  0000 C CNN
+F 2 "" H 350 -3600 60  0001 C CNN
+F 3 "" H 350 -3600 60  0001 C CNN
+	1    350  -3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 -4900 3800 -4550
+$Comp
+L MCP73833T-FCI_UN:MCP73833T-FCI_UN U5
+U 1 1 62A81E1D
+P 1700 -4850
+F 0 "U5" H 1700 -4380 50  0000 C CNN
+F 1 "MCP73833T-FCI_UN" H 1700 -4471 50  0000 C CNN
+F 2 "guardiancam:MCP73833T-FCI_UN" H 1700 -4850 50  0001 L BNN
+F 3 "MCP73833T-FCI/UN" H 1700 -4850 50  0001 L BNN
+F 4 "MSOP10" H 1700 -4850 50  0001 L BNN "Field4"
+F 5 "88K5666" H 1700 -4850 50  0001 L BNN "Field5"
+F 6 "1605576" H 1700 -4850 50  0001 L BNN "Field6"
+F 7 "Microchip" H 1700 -4850 50  0001 L BNN "Field7"
+	1    1700 -4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FFCC035
+P 100 -5400
+F 0 "R3" H 168 -5354 50  0000 L CNN
+F 1 "250" H 168 -5445 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 140 -5410 50  0001 C CNN
+F 3 "~" H 100 -5400 50  0001 C CNN
+	1    100  -5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5F0A0DE0
+P 100 -5100
+F 0 "D2" V 139 -5217 50  0000 R CNN
+F 1 "LG R971-KN-1 " V 48  -5217 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 100 -5100 50  0001 C CNN
+F 3 "~" H 100 -5100 50  0001 C CNN
+	1    100  -5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 5EFCAB18
+P 3800 -4050
+F 0 "BT1" H 3908 -4004 50  0000 L CNN
+F 1 "Battery" H 3908 -4095 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" V 3800 -3990 50  0001 C CNN
+F 3 "~" V 3800 -3990 50  0001 C CNN
+	1    3800 -4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR09
+U 1 1 5EFEBF25
+P 3800 -4900
+F 0 "#PWR09" H 3800 -5050 50  0001 C CNN
+F 1 "+BATT" H 3815 -4727 50  0000 C CNN
+F 2 "" H 3800 -4900 50  0001 C CNN
+F 3 "" H 3800 -4900 50  0001 C CNN
+	1    3800 -4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5F1AAC5E
+P 3250 -4200
+F 0 "C13" H 3365 -4154 50  0000 L CNN
+F 1 "0.1uf" H 3365 -4245 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3288 -4350 50  0001 C CNN
+F 3 "~" H 3250 -4200 50  0001 C CNN
+	1    3250 -4200
+	1    0    0    -1  
+$EndComp
+Connection ~ -100 -4650
+$Comp
+L power:VBUS #PWR0103
+U 1 1 63754796
+P -100 -5050
+F 0 "#PWR0103" H -100 -5200 50  0001 C CNN
+F 1 "VBUS" H -85 -4877 50  0000 C CNN
+F 2 "" H -100 -5050 50  0001 C CNN
+F 3 "" H -100 -5050 50  0001 C CNN
+	1    -100 -5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0104
+U 1 1 6378116C
+P 100 -5700
+F 0 "#PWR0104" H 100 -5850 50  0001 C CNN
+F 1 "VBUS" H 115 -5527 50  0000 C CNN
+F 2 "" H 100 -5700 50  0001 C CNN
+F 3 "" H 100 -5700 50  0001 C CNN
+	1    100  -5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	100  -4850 100  -4950
+Wire Wire Line
+	-100 -5050 -100 -4650
+Wire Wire Line
+	100  -5700 100  -5550
+NoConn ~ 3500 -1550
+NoConn ~ 3500 -1850
+Wire Wire Line
+	100  -4850 900  -4850
+Wire Wire Line
+	350  -4950 900  -4950
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0112
+U 1 1 63B74E7B
+P 900 -4350
+F 0 "#GND0112" H 900 -4350 45  0001 L BNN
+F 1 "GND" H 900 -4420 45  0000 C CNN
+F 2 "" H 900 -4350 60  0001 C CNN
+F 3 "" H 900 -4350 60  0001 C CNN
+	1    900  -4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R12
+U 1 1 63BF8B49
+P 350 -4100
+F 0 "R12" H 418 -4054 50  0000 L CNN
+F 1 "10k" H 418 -4145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 390 -4110 50  0001 C CNN
+F 3 "~" H 350 -4100 50  0001 C CNN
+	1    350  -4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	350  -4950 350  -4250
+Wire Wire Line
+	350  -3950 350  -3700
+$Comp
+L NCU18XH103F60RB:NCU18XH103F60RB RT1
+U 1 1 63CAC110
+P 650 -4100
+F 0 "RT1" V 604 -3970 50  0000 L CNN
+F 1 "NCU18XH103F60RB" V 695 -3970 50  0000 L CNN
+F 2 "guardiancam:NCU18XH103F60RB" H 650 -4100 50  0001 L BNN
+F 3 "" H 650 -4100 50  0001 C CNN
+	1    650  -4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	900  -4750 650  -4750
+Wire Wire Line
+	650  -4750 650  -4500
+Wire Wire Line
+	650  -3700 350  -3700
+Connection ~ 350  -3700
+NoConn ~ 8450 -2200
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 64D9F0EC
+P 6200 6250
+F 0 "#PWR0105" H 6200 6100 50  0001 C CNN
+F 1 "+3V3" V 6215 6378 50  0000 L CNN
+F 2 "" H 6200 6250 50  0001 C CNN
+F 3 "" H 6200 6250 50  0001 C CNN
+	1    6200 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_Module:ESP32-WROOM-32D U1
+U 1 1 6015B9D1
+P 2300 3150
+F 0 "U1" H 2300 4731 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 2300 4640 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 2300 1650 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 2000 3200 50  0001 C CNN
+	1    2300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0107
+U 1 1 604E6887
+P 1250 900
+F 0 "#PWR0107" H 1250 750 50  0001 C CNN
+F 1 "+3V3" V 1265 1028 50  0000 L CNN
+F 2 "" H 1250 900 50  0001 C CNN
+F 3 "" H 1250 900 50  0001 C CNN
+	1    1250 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2250 700  2250
+Wire Wire Line
+	1700 2150 700  2150
+Text Label 3250 3750 0    50   ~ 0
+cam_sda
+Text Label 3250 3850 0    50   ~ 0
+cam_scl
+Text Label 3250 3650 0    50   ~ 0
+cam_vsync
+Text Label 3250 3550 0    50   ~ 0
+cam_hsync
+Text Label 3250 1950 0    50   ~ 0
+cam_xclk
+Text Label 800  2250 0    50   ~ 0
+cam_d5
+Text Label 3250 3450 0    50   ~ 0
+cam_pclk
+Text Label 800  2150 0    50   ~ 0
+cam_d4
+Text Label 3250 3250 0    50   ~ 0
+cam_d2
+Text Label 3250 3150 0    50   ~ 0
+cam_d1
+Text Label 3250 3350 0    50   ~ 0
+cam_d3
+Text Label 3250 2450 0    50   ~ 0
+cam_d0
+$Comp
+L Device:C_Small C2
+U 1 1 6064D783
+P 1700 1150
+F 0 "C2" V 1471 1150 50  0000 C CNN
+F 1 "0.1uf" V 1562 1150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1700 1150 50  0001 C CNN
+F 3 "~" H 1700 1150 50  0001 C CNN
+	1    1700 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 6064D789
+P 1250 1150
+F 0 "C1" V 1021 1150 50  0000 C CNN
+F 1 "1uf" V 1112 1150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1250 1150 50  0001 C CNN
+F 3 "~" H 1250 1150 50  0001 C CNN
+	1    1250 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 900  1250 950 
+Wire Wire Line
+	1700 1050 1700 950 
+Wire Wire Line
+	1700 950  1250 950 
+Connection ~ 1250 950 
+Wire Wire Line
+	1250 950  1250 1050
+Wire Wire Line
+	1700 1250 1700 1350
+Wire Wire Line
+	1700 1350 1250 1350
+Wire Wire Line
+	1250 1350 1250 1250
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0104
+U 1 1 607129F2
+P 1250 1500
+F 0 "#GND0104" H 1250 1500 45  0001 L BNN
+F 1 "GND" H 1250 1430 45  0000 C CNN
+F 2 "" H 1250 1500 60  0001 C CNN
+F 3 "" H 1250 1500 60  0001 C CNN
+	1    1250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1400 1250 1350
+Connection ~ 1250 1350
+Wire Wire Line
+	2300 1750 1900 1750
+Wire Wire Line
+	1900 1750 1900 950 
+Wire Wire Line
+	1900 950  1700 950 
+Connection ~ 1700 950 
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0107
+U 1 1 607792EF
+P 2300 4750
+F 0 "#GND0107" H 2300 4750 45  0001 L BNN
+F 1 "GND" H 2300 4680 45  0000 C CNN
+F 2 "" H 2300 4750 60  0001 C CNN
+F 3 "" H 2300 4750 60  0001 C CNN
+	1    2300 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4550 2300 4650
+Text Label 3250 4250 0    50   ~ 0
+cam_d7
+Text Label 3250 4150 0    50   ~ 0
+cam_d6
+Wire Wire Line
+	2900 3150 3600 3150
+Wire Wire Line
+	2900 3250 3600 3250
+Wire Wire Line
+	2900 3350 3600 3350
+Wire Wire Line
+	2900 3450 3600 3450
+Wire Wire Line
+	2900 3550 3600 3550
+Wire Wire Line
+	2900 3750 3600 3750
+Wire Wire Line
+	2900 3850 3600 3850
+Wire Wire Line
+	2900 4150 3600 4150
+Wire Wire Line
+	2900 4250 3600 4250
+Wire Wire Line
+	2900 2450 3600 2450
+Wire Wire Line
+	2900 3650 3600 3650
+Wire Wire Line
+	2900 2050 3600 2050
+Wire Wire Line
+	2900 2250 3600 2250
+Wire Wire Line
+	5950 750  5950 1400
+Wire Wire Line
+	5800 750  5800 950 
+Text Label 6100 3100 0    50   ~ 0
+cam_d0
+Text Label 6100 3200 0    50   ~ 0
+cam_d3
+Text Label 6100 3300 0    50   ~ 0
+cam_d1
+Text Label 6100 3400 0    50   ~ 0
+cam_d2
+Wire Wire Line
+	7000 3100 6000 3100
+Wire Wire Line
+	7000 3200 6000 3200
+Wire Wire Line
+	7000 3300 6000 3300
+Wire Wire Line
+	7000 3400 6000 3400
+NoConn ~ 7000 1300
+Wire Wire Line
+	6250 3600 7000 3600
+Wire Wire Line
+	5650 3500 5650 3600
+Wire Wire Line
+	7000 3500 5650 3500
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND018
+U 1 1 5F5C053E
+P 5650 3700
+F 0 "#GND018" H 5650 3700 45  0001 L BNN
+F 1 "GND" H 5650 3630 45  0000 C CNN
+F 2 "" H 5650 3700 60  0001 C CNN
+F 3 "" H 5650 3700 60  0001 C CNN
+	1    5650 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6250 3600 0    50   Input ~ 0
+cam_avdd
+Wire Wire Line
+	7000 1100 6750 1100
+$Comp
+L guardianCam_Wifi-rescue:FH12-24S-0.5SH(55)-FH12-24S-0.5SH_55_ J2
+U 1 1 5F2973CF
+P 7400 2300
+F 0 "J2" H 7630 2396 50  0000 L CNN
+F 1 "FH12-24S-0.5SH(55)" H 7630 2305 50  0000 L CNN
+F 2 "guardiancam:HRS_FH12-24S-0.5SH(55)" H 7400 2300 50  0001 L BNN
+F 3 "2.2mm" H 7400 2300 50  0001 L BNN
+F 4 "Manufacturer recommendations" H 7400 2300 50  0001 L BNN "Field4"
+F 5 "" H 7400 2300 50  0001 L BNN "Field5"
+F 6 "Hirose" H 7400 2300 50  0001 L BNN "Field6"
+	1    7400 2300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5200 2300 5200 1700
+Wire Wire Line
+	4900 2700 7000 2700
+Wire Wire Line
+	5250 2900 7000 2900
+$Comp
+L Device:C C17
+U 1 1 5F46CD24
+P 5250 3050
+F 0 "C17" H 5365 3096 50  0000 L CNN
+F 1 "15pf" H 5365 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5288 2900 50  0001 C CNN
+F 3 "~" H 5250 3050 50  0001 C CNN
+	1    5250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND015
+U 1 1 5F4641F8
+P 5250 3300
+F 0 "#GND015" H 5250 3300 45  0001 L BNN
+F 1 "GND" H 5250 3230 45  0000 C CNN
+F 2 "" H 5250 3300 60  0001 C CNN
+F 3 "" H 5250 3300 60  0001 C CNN
+	1    5250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1400 7000 1400
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND019
+U 1 1 5F45AEE1
+P 5800 1050
+F 0 "#GND019" H 5800 1050 45  0001 L BNN
+F 1 "GND" H 5800 980 45  0000 C CNN
+F 2 "" H 5800 1050 60  0001 C CNN
+F 3 "" H 5800 1050 60  0001 C CNN
+	1    5800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R8
+U 1 1 5F438D9C
+P 5850 1700
+F 0 "R8" V 5645 1700 50  0000 C CNN
+F 1 "470k" V 5736 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5890 1690 50  0001 C CNN
+F 3 "~" H 5850 1700 50  0001 C CNN
+	1    5850 1700
+	0    1    1    0   
+$EndComp
+Connection ~ 5200 1700
+Wire Wire Line
+	5200 1500 5200 1700
+$Comp
+L Device:R_US R7
+U 1 1 5F401137
+P 5850 1500
+F 0 "R7" V 5645 1500 50  0000 C CNN
+F 1 "470k" V 5736 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5890 1490 50  0001 C CNN
+F 3 "~" H 5850 1500 50  0001 C CNN
+	1    5850 1500
+	0    1    1    0   
+$EndComp
+Text Label 6100 3000 0    50   ~ 0
+cam_d4
+Text Label 6100 2900 0    50   ~ 0
+cam_pclk
+Text Label 6100 2800 0    50   ~ 0
+cam_d5
+Text Label 6100 2700 0    50   ~ 0
+cam_dgnd
+Text Label 6100 2600 0    50   ~ 0
+cam_d6
+Text Label 6100 2500 0    50   ~ 0
+cam_xclk
+Text Label 6100 2400 0    50   ~ 0
+cam_d7
+Text Label 6100 2300 0    50   ~ 0
+cam_dovdd
+Text Label 6100 2200 0    50   ~ 0
+cam_dvdd
+Text Label 6100 2100 0    50   ~ 0
+cam_hsync
+Text Label 6100 2000 0    50   ~ 0
+cam_pwdn
+Text Label 6100 1900 0    50   ~ 0
+cam_vsync
+Text Label 6100 1800 0    50   ~ 0
+cam_reset
+Text Label 6100 1700 0    50   ~ 0
+cam_scl
+Text Label 6100 1600 0    50   ~ 0
+cam_avdd
+Text Label 6100 1500 0    50   ~ 0
+cam_sda
+Text Label 6100 1400 0    50   ~ 0
+cam_agnd
+Wire Wire Line
+	7000 3000 6000 3000
+Wire Wire Line
+	7000 2800 6000 2800
+Wire Wire Line
+	7000 2600 6000 2600
+Wire Wire Line
+	7000 2500 6000 2500
+Wire Wire Line
+	7000 2400 6000 2400
+Wire Wire Line
+	7000 2200 6000 2200
+Wire Wire Line
+	7000 2100 6000 2100
+Wire Wire Line
+	7000 1900 6000 1900
+Wire Wire Line
+	7000 1800 6000 1800
+Wire Wire Line
+	7000 1700 6000 1700
+Wire Wire Line
+	7000 1600 6000 1600
+Wire Wire Line
+	7000 1500 6000 1500
+Wire Wire Line
+	6750 1100 6750 900 
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND021
+U 1 1 5F29A9EE
+P 6550 1100
+F 0 "#GND021" H 6550 1100 45  0001 L BNN
+F 1 "GND" H 6550 1030 45  0000 C CNN
+F 2 "" H 6550 1100 60  0001 C CNN
+F 3 "" H 6550 1100 60  0001 C CNN
+	1    6550 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 900  6550 900 
+Wire Wire Line
+	6550 900  6550 1000
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 612A341E
+P 5200 1300
+F 0 "#PWR0108" H 5200 1150 50  0001 C CNN
+F 1 "+3V3" V 5215 1428 50  0000 L CNN
+F 2 "" H 5200 1300 50  0001 C CNN
+F 3 "" H 5200 1300 50  0001 C CNN
+	1    5200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1500 5700 1500
+Wire Wire Line
+	5200 1700 5700 1700
+Wire Wire Line
+	5200 2300 7000 2300
+Wire Wire Line
+	5200 1500 5200 1300
+Connection ~ 5200 1500
+Wire Wire Line
+	9400 4400 9400 4700
+Wire Wire Line
+	8950 5600 9400 5600
+Wire Wire Line
+	9400 5600 9400 5900
+Connection ~ 9400 5600
+Wire Wire Line
+	9400 5600 9550 5600
+$Comp
+L Regulator_Linear:AP2127K-2.8 U4
+U 1 1 5F5EB85F
+P 9900 4500
+F 0 "U4" H 9900 4842 50  0000 C CNN
+F 1 "AP2127K-2.8" H 9900 4751 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9900 4825 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2127.pdf" H 9900 4600 50  0001 C CNN
+	1    9900 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4500 8800 4500
+Wire Wire Line
+	8800 4500 8800 5700
+Wire Wire Line
+	8800 5700 9550 5700
+Connection ~ 8800 4500
+Text Label 8400 4500 0    50   ~ 0
+cam_pwr
+Wire Wire Line
+	8350 4500 8800 4500
+Wire Wire Line
+	2900 3950 3600 3950
+Text Label 3250 3950 0    50   ~ 0
+cam_pwr
+$Comp
+L Device:R_Small R1
+U 1 1 6167EDDB
+P 1350 6150
+F 0 "R1" H 1409 6196 50  0000 L CNN
+F 1 "100k" H 1409 6105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1350 6150 50  0001 C CNN
+F 3 "~" H 1350 6150 50  0001 C CNN
+	1    1350 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 6168A494
+P 1350 5950
+F 0 "#PWR0111" H 1350 5800 50  0001 C CNN
+F 1 "+3V3" V 1365 6078 50  0000 L CNN
+F 2 "" H 1350 5950 50  0001 C CNN
+F 3 "" H 1350 5950 50  0001 C CNN
+	1    1350 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 5950 1350 6050
+$Comp
+L Device:C_Small C5
+U 1 1 616B8B80
+P 1350 6650
+F 0 "C5" V 1121 6650 50  0000 C CNN
+F 1 "0.1uf" V 1212 6650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1350 6650 50  0001 C CNN
+F 3 "~" H 1350 6650 50  0001 C CNN
+	1    1350 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0110
+U 1 1 616D07B4
+P 1350 6950
+F 0 "#GND0110" H 1350 6950 45  0001 L BNN
+F 1 "GND" H 1350 6880 45  0000 C CNN
+F 2 "" H 1350 6950 60  0001 C CNN
+F 3 "" H 1350 6950 60  0001 C CNN
+	1    1350 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6750 1350 6850
+Wire Wire Line
+	1350 6250 1350 6400
+Wire Wire Line
+	1350 6400 950  6400
+Connection ~ 1350 6400
+Wire Wire Line
+	1350 6400 1350 6550
+Text Label 950  6400 0    50   ~ 0
+cam_reset
+Text Label 9450 2700 0    50   ~ 0
+sd_data1
+Text Label 9450 2600 0    50   ~ 0
+sd_data0
+Wire Wire Line
+	8700 2500 10200 2500
+Wire Wire Line
+	8700 2500 8700 2550
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0111
+U 1 1 6091F573
+P 8700 2650
+F 0 "#GND0111" H 8700 2650 45  0001 L BNN
+F 1 "GND" H 8700 2580 45  0000 C CNN
+F 2 "" H 8700 2650 60  0001 C CNN
+F 3 "" H 8700 2650 60  0001 C CNN
+	1    8700 2650
+	1    0    0    -1  
+$EndComp
+Text Label 9450 2400 0    50   ~ 0
+sd_clk
+Wire Wire Line
+	8700 2300 10200 2300
+Wire Wire Line
+	8700 1950 8700 2300
+$Comp
+L power:+3V3 #PWR0106
+U 1 1 608A0EB4
+P 8700 1950
+F 0 "#PWR0106" H 8700 1800 50  0001 C CNN
+F 1 "+3V3" V 8715 2078 50  0000 L CNN
+F 2 "" H 8700 1950 50  0001 C CNN
+F 3 "" H 8700 1950 50  0001 C CNN
+	1    8700 1950
+	1    0    0    -1  
+$EndComp
+Text Label 9450 2200 0    50   ~ 0
+sd_cmd
+Text Label 9450 2100 0    50   ~ 0
+sd_data3
+Text Label 9450 2000 0    50   ~ 0
+sd_data2
+Wire Wire Line
+	10200 2700 9400 2700
+Wire Wire Line
+	10200 2600 9400 2600
+Wire Wire Line
+	10200 2400 9400 2400
+Wire Wire Line
+	10200 2200 9400 2200
+Wire Wire Line
+	10200 2100 9400 2100
+Wire Wire Line
+	10200 2000 9400 2000
+Text Label 4850 6900 0    50   ~ 0
+capture
+$Comp
+L Device:R_US R17
+U 1 1 64E0683B
+P 6200 6600
+F 0 "R17" H 6268 6646 50  0000 L CNN
+F 1 "250" H 6268 6555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6240 6590 50  0001 C CNN
+F 3 "~" H 6200 6600 50  0001 C CNN
+	1    6200 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:1050170001-1050170001 J1
+U 1 1 6030A2C4
+P 5100 -4700
+F 0 "J1" H 5207 -4133 50  0000 C CNN
+F 1 "1050170001-1050170001" H 5207 -4224 50  0000 C CNN
+F 2 "guardiancam:MOLEX_1050170001" H 5100 -4700 50  0001 L BNN
+F 3 "Manufacturer recommendation" H 5100 -4700 50  0001 L BNN
+F 4 "molex" H 5100 -4700 50  0001 L BNN "Field4"
+F 5 "F" H 5100 -4700 50  0001 L BNN "Field5"
+	1    5100 -4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0112
+U 1 1 6036E76D
+P 7550 -5100
+F 0 "#PWR0112" H 7550 -5250 50  0001 C CNN
+F 1 "VBUS" H 7565 -4927 50  0000 C CNN
+F 2 "" H 7550 -5100 50  0001 C CNN
+F 3 "" H 7550 -5100 50  0001 C CNN
+	1    7550 -5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 6039E3FF
+P 7000 -4700
+F 0 "C14" H 7115 -4654 50  0000 L CNN
+F 1 "10uf" H 7115 -4745 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 -4850 50  0001 C CNN
+F 3 "~" H 7000 -4700 50  0001 C CNN
+	1    7000 -4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0113
+U 1 1 6039E405
+P 7000 -4350
+F 0 "#GND0113" H 7000 -4350 45  0001 L BNN
+F 1 "GND" H 7000 -4420 45  0000 C CNN
+F 2 "" H 7000 -4350 60  0001 C CNN
+F 3 "" H 7000 -4350 60  0001 C CNN
+	1    7000 -4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 -4550 7000 -4450
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0114
+U 1 1 60409E4C
+P 6200 -3850
+F 0 "#GND0114" H 6200 -3850 45  0001 L BNN
+F 1 "GND" H 6200 -3920 45  0000 C CNN
+F 2 "" H 6200 -3850 60  0001 C CNN
+F 3 "" H 6200 -3850 60  0001 C CNN
+	1    6200 -3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 6042DC92
+P 5400 -3750
+F 0 "C8" H 5515 -3704 50  0000 L CNN
+F 1 "1uf" H 5515 -3795 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5438 -3900 50  0001 C CNN
+F 3 "~" H 5400 -3750 50  0001 C CNN
+	1    5400 -3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 -4600 6200 -3950
+Wire Wire Line
+	5500 -4600 6200 -4600
+Wire Wire Line
+	5500 -4400 5600 -4400
+Wire Wire Line
+	5600 -4400 5600 -3950
+Wire Wire Line
+	5600 -3950 5400 -3950
+Wire Wire Line
+	5400 -3950 5400 -3900
+Wire Wire Line
+	5600 -3950 5750 -3950
+Wire Wire Line
+	5750 -3950 5750 -3850
+Connection ~ 5600 -3950
+Wire Wire Line
+	5750 -3650 5750 -3500
+Wire Wire Line
+	5750 -3500 5600 -3500
+Wire Wire Line
+	5400 -3500 5400 -3600
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0115
+U 1 1 60490C05
+P 5600 -3300
+F 0 "#GND0115" H 5600 -3300 45  0001 L BNN
+F 1 "GND" H 5600 -3370 45  0000 C CNN
+F 2 "" H 5600 -3300 60  0001 C CNN
+F 3 "" H 5600 -3300 60  0001 C CNN
+	1    5600 -3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 -3400 5600 -3500
+Connection ~ 5600 -3500
+Wire Wire Line
+	5600 -3500 5400 -3500
+Wire Wire Line
+	5500 -4700 6200 -4700
+Wire Wire Line
+	5500 -4800 6200 -4800
+Wire Wire Line
+	5500 -4900 6200 -4900
+$Comp
+L Device:R_Small_US R2
+U 1 1 60510547
+P 5750 -3750
+F 0 "R2" H 5818 -3704 50  0000 L CNN
+F 1 "330" H 5818 -3795 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5750 -3750 50  0001 C CNN
+F 3 "~" H 5750 -3750 50  0001 C CNN
+	1    5750 -3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 -5100 7550 -5000
+Connection ~ 7000 -5000
+Wire Wire Line
+	7000 -5000 7000 -4850
+Text Label 5950 -4900 0    50   ~ 0
+usb_d_N
+Text Label 5950 -4800 0    50   ~ 0
+usb_d_P
+Text Label 5950 -4700 0    50   ~ 0
+usb_id
+Wire Wire Line
+	700  1950 1700 1950
+$Comp
+L Interface_USB:CP2102N-A01-GQFN24 U6
+U 1 1 6061A1D6
+P 10750 -5000
+F 0 "U6" H 10750 -3919 50  0000 C CNN
+F 1 "CP2102N-A01-GQFN24" H 10750 -4010 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 11200 -5800 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 10800 -6050 50  0001 C CNN
+	1    10750 -5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 60628D42
+P 8950 -6100
+F 0 "C16" H 9065 -6054 50  0000 L CNN
+F 1 "4.7uf" H 9065 -6145 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8988 -6250 50  0001 C CNN
+F 3 "~" H 8950 -6100 50  0001 C CNN
+	1    8950 -6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 60635B57
+P 9350 -6100
+F 0 "C18" H 9465 -6054 50  0000 L CNN
+F 1 "0.1uf" H 9465 -6145 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9388 -6250 50  0001 C CNN
+F 3 "~" H 9350 -6100 50  0001 C CNN
+	1    9350 -6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 -6250 8950 -6250
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0116
+U 1 1 6065E3D4
+P 9150 -5750
+F 0 "#GND0116" H 9150 -5750 45  0001 L BNN
+F 1 "GND" H 9150 -5820 45  0000 C CNN
+F 2 "" H 9150 -5750 60  0001 C CNN
+F 3 "" H 9150 -5750 60  0001 C CNN
+	1    9150 -5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 -5950 8950 -5850
+Wire Wire Line
+	8950 -5850 9150 -5850
+Wire Wire Line
+	9350 -5950 9350 -5850
+Wire Wire Line
+	9350 -5850 9150 -5850
+Connection ~ 9150 -5850
+Wire Wire Line
+	8950 -6250 8950 -6400
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0117
+U 1 1 606C145A
+P 10750 -3850
+F 0 "#GND0117" H 10750 -3850 45  0001 L BNN
+F 1 "GND" H 10750 -3920 45  0000 C CNN
+F 2 "" H 10750 -3850 60  0001 C CNN
+F 3 "" H 10750 -3850 60  0001 C CNN
+	1    10750 -3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 -4100 10750 -4050
+Wire Wire Line
+	10850 -4100 10850 -4050
+Wire Wire Line
+	10850 -4050 10750 -4050
+Connection ~ 10750 -4050
+Wire Wire Line
+	10750 -4050 10750 -3950
+$Comp
+L Power_Protection:SP0503BAHT D1
+U 1 1 606EC9BB
+P 9950 -3800
+F 0 "D1" H 10155 -3754 50  0000 L CNN
+F 1 "SP0503BAHT" H 10155 -3845 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 10175 -3850 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 10075 -3675 50  0001 C CNN
+	1    9950 -3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0118
+U 1 1 606EF223
+P 9950 -3350
+F 0 "#GND0118" H 9950 -3350 45  0001 L BNN
+F 1 "GND" H 9950 -3420 45  0000 C CNN
+F 2 "" H 9950 -3350 60  0001 C CNN
+F 3 "" H 9950 -3350 60  0001 C CNN
+	1    9950 -3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 9350 -6250
+Connection ~ 8950 -6250
+Wire Wire Line
+	9700 -5000 10150 -5000
+Wire Wire Line
+	9350 -6250 9700 -6250
+Wire Wire Line
+	10750 -5900 10650 -5900
+Wire Wire Line
+	10200 -5900 10200 -6250
+Connection ~ 10650 -5900
+Wire Wire Line
+	10650 -5900 10200 -5900
+Wire Wire Line
+	9700 -6250 9700 -5000
+Connection ~ 9700 -6250
+Wire Wire Line
+	9700 -6250 9950 -6250
+$Comp
+L Device:R_US R11
+U 1 1 607C6C8B
+P 9950 -5950
+F 0 "R11" H 10018 -5904 50  0000 L CNN
+F 1 "4.7k" H 10018 -5995 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9990 -5960 50  0001 C CNN
+F 3 "~" H 9950 -5950 50  0001 C CNN
+	1    9950 -5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 -5800 9950 -5600
+Wire Wire Line
+	9950 -5600 10150 -5600
+Wire Wire Line
+	9950 -6100 9950 -6250
+Connection ~ 9950 -6250
+Wire Wire Line
+	9950 -6250 10200 -6250
+$Comp
+L power:VBUS #PWR0114
+U 1 1 6080356A
+P 8800 -5250
+F 0 "#PWR0114" H 8800 -5400 50  0001 C CNN
+F 1 "VBUS" H 8815 -5077 50  0000 C CNN
+F 2 "" H 8800 -5250 50  0001 C CNN
+F 3 "" H 8800 -5250 50  0001 C CNN
+	1    8800 -5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R9
+U 1 1 6081278D
+P 8800 -5000
+F 0 "R9" H 8868 -4954 50  0000 L CNN
+F 1 "24k" H 8868 -5045 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8840 -5010 50  0001 C CNN
+F 3 "~" H 8800 -5000 50  0001 C CNN
+	1    8800 -5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R10
+U 1 1 608219E3
+P 8800 -4550
+F 0 "R10" H 8868 -4504 50  0000 L CNN
+F 1 "47k" H 8868 -4595 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8840 -4560 50  0001 C CNN
+F 3 "~" H 8800 -4550 50  0001 C CNN
+	1    8800 -4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0119
+U 1 1 60830EF8
+P 8800 -4150
+F 0 "#GND0119" H 8800 -4150 45  0001 L BNN
+F 1 "GND" H 8800 -4220 45  0000 C CNN
+F 2 "" H 8800 -4150 60  0001 C CNN
+F 3 "" H 8800 -4150 60  0001 C CNN
+	1    8800 -4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 -4400 8800 -4250
+Wire Wire Line
+	8800 -4850 8800 -4700
+Wire Wire Line
+	8800 -5250 8800 -5150
+Text Label 9400 -4500 0    50   ~ 0
+usb_d_N
+Wire Wire Line
+	10150 -4700 9850 -4700
+Connection ~ 8800 -4700
+Wire Wire Line
+	9850 -4000 9850 -4700
+Connection ~ 9850 -4700
+Wire Wire Line
+	9850 -4700 8800 -4700
+Wire Wire Line
+	9950 -3600 9950 -3450
+Text Label 11700 -5200 0    50   ~ 0
+esp_dbg_rx
+Text Label 11700 -5300 0    50   ~ 0
+esp_dbg_tx
+Wire Wire Line
+	11350 -5300 12050 -5300
+Wire Wire Line
+	11350 -5200 12050 -5200
+Connection ~ 800  -2050
+Wire Wire Line
+	800  -2050 2100 -2050
+Connection ~ 4350 -2050
+Wire Wire Line
+	3500 -2050 4350 -2050
+Wire Wire Line
+	4350 -2150 4350 -2050
+Wire Wire Line
+	10550 -2150 10550 -2200
+Connection ~ 10550 -2200
+Wire Wire Line
+	9250 -2200 10150 -2200
+Wire Wire Line
+	5500 -5000 7000 -5000
+$Comp
+L Device:R_US R15
+U 1 1 60AEB061
+P 7550 -4700
+F 0 "R15" H 7618 -4654 50  0000 L CNN
+F 1 "47.5k" H 7618 -4745 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7590 -4710 50  0001 C CNN
+F 3 "~" H 7550 -4700 50  0001 C CNN
+	1    7550 -4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0120
+U 1 1 60AFB66B
+P 7550 -4350
+F 0 "#GND0120" H 7550 -4350 45  0001 L BNN
+F 1 "GND" H 7550 -4420 45  0000 C CNN
+F 2 "" H 7550 -4350 60  0001 C CNN
+F 3 "" H 7550 -4350 60  0001 C CNN
+	1    7550 -4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 -4550 7550 -4450
+Wire Wire Line
+	7550 -4850 7550 -5000
+Wire Wire Line
+	7000 -5000 7550 -5000
+Connection ~ 7550 -5000
+Text Label 9400 -4600 0    50   ~ 0
+usb_d_P
+Wire Wire Line
+	9350 -4600 10050 -4600
+Wire Wire Line
+	9350 -4500 9950 -4500
+Wire Wire Line
+	10050 -4000 10050 -4600
+Connection ~ 10050 -4600
+Wire Wire Line
+	10050 -4600 10150 -4600
+Wire Wire Line
+	9950 -4000 9950 -4500
+Connection ~ 9950 -4500
+Wire Wire Line
+	9950 -4500 10150 -4500
+Wire Wire Line
+	5950 750  5800 750 
+Wire Wire Line
+	9400 4150 9400 4400
+Connection ~ 9400 4400
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 60F04876
+P 8950 -6400
+F 0 "#PWR0113" H 8950 -6550 50  0001 C CNN
+F 1 "+3V3" V 8965 -6272 50  0000 L CNN
+F 2 "" H 8950 -6400 50  0001 C CNN
+F 3 "" H 8950 -6400 50  0001 C CNN
+	1    8950 -6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L EVQ-P7J01P:EVQ-P7J01P SW1
+U 1 1 6031DB89
+P 6200 7250
+F 0 "SW1" H 6200 7477 50  0000 C CNN
+F 1 "EVQ-P7J01P" H 6200 7386 50  0000 C CNN
+F 2 "guardiancam:EVQ-P7J01P" H 6200 7250 50  0001 L BNN
+F 3 "Manufacturer Recommendation" H 6200 7250 50  0001 L BNN
+F 4 "Panasonic" H 6200 7250 50  0001 L BNN "Field4"
+	1    6200 7250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 3150 700  3150
+Wire Wire Line
+	1700 3250 700  3250
+Wire Wire Line
+	1700 3350 700  3350
+Wire Wire Line
+	1700 3450 700  3450
+Text Label 750  3150 0    50   ~ 0
+ram_d0
+Text Label 750  3250 0    50   ~ 0
+ram_d1
+Text Label 750  3350 0    50   ~ 0
+ram_d2
+Text Label 750  3450 0    50   ~ 0
+ram_d3
+Wire Wire Line
+	2900 3050 3600 3050
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND030
+U 1 1 5F884281
+P 2200 5500
+F 0 "#GND030" H 2200 5500 45  0001 L BNN
+F 1 "GND" H 2200 5430 45  0000 C CNN
+F 2 "" H 2200 5500 60  0001 C CNN
+F 3 "" H 2200 5500 60  0001 C CNN
+	1    2200 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5350 2200 5400
+Wire Wire Line
+	2600 5350 2200 5350
+Wire Wire Line
+	3100 5350 2800 5350
+$Comp
+L Device:R_Small_US R13
+U 1 1 5F884278
+P 2700 5350
+F 0 "R13" V 2495 5350 50  0000 C CNN
+F 1 "250" V 2586 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2700 5350 50  0001 C CNN
+F 3 "~" H 2700 5350 50  0001 C CNN
+	1    2700 5350
+	0    -1   -1   0   
+$EndComp
+Text Label 3350 5350 0    50   ~ 0
+test_led
+Wire Wire Line
+	3950 5350 3300 5350
+$Comp
+L Device:LED_Small D4
+U 1 1 5F7F9645
+P 3200 5350
+F 0 "D4" H 3200 5585 50  0000 C CNN
+F 1 "LED_Small" H 3200 5494 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" V 3200 5350 50  0001 C CNN
+F 3 "~" V 3200 5350 50  0001 C CNN
+	1    3200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 4400 10350 4400
+Wire Wire Line
+	10350 4400 10350 4700
+Connection ~ 10350 4400
+Wire Wire Line
+	10300 5600 10150 5600
+Wire Wire Line
+	10300 5600 10300 5900
+Connection ~ 10300 5600
+$Comp
+L power:+3V3 #PWR0117
+U 1 1 60AC9CCB
+P 4250 1550
+F 0 "#PWR0117" H 4250 1400 50  0001 C CNN
+F 1 "+3V3" V 4265 1678 50  0000 L CNN
+F 2 "" H 4250 1550 50  0001 C CNN
+F 3 "" H 4250 1550 50  0001 C CNN
+	1    4250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R18
+U 1 1 60ADC82B
+P 4250 1700
+F 0 "R18" V 4045 1700 50  0000 C CNN
+F 1 "nc" V 4136 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4250 1700 50  0001 C CNN
+F 3 "~" H 4250 1700 50  0001 C CNN
+	1    4250 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 1550 4250 1600
+Wire Wire Line
+	4250 1800 4250 1950
+Wire Wire Line
+	2900 2950 3600 2950
+Wire Wire Line
+	2900 2850 3600 2850
+Wire Wire Line
+	2900 2650 3600 2650
+Text Label 4750 5350 0    50   ~ 0
+audio_en
+Wire Wire Line
+	2900 2350 3600 2350
+Wire Wire Line
+	2900 2150 3600 2150
+$Comp
+L Device:R_Small_US R19
+U 1 1 60B96643
+P 3900 2650
+F 0 "R19" V 3695 2650 50  0000 C CNN
+F 1 "47k" V 3786 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3900 2650 50  0001 C CNN
+F 3 "~" H 3900 2650 50  0001 C CNN
+	1    3900 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 2750 3600 2750
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0123
+U 1 1 60D2B202
+P 3900 2900
+F 0 "#GND0123" H 3900 2900 45  0001 L BNN
+F 1 "GND" H 3900 2830 45  0000 C CNN
+F 2 "" H 3900 2900 60  0001 C CNN
+F 3 "" H 3900 2900 60  0001 C CNN
+	1    3900 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2550 3900 2550
+Wire Wire Line
+	3900 2750 3900 2800
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0124
+U 1 1 60DDDC95
+P 4200 4300
+F 0 "#GND0124" H 4200 4300 45  0001 L BNN
+F 1 "GND" H 4200 4230 45  0000 C CNN
+F 2 "" H 4200 4300 60  0001 C CNN
+F 3 "" H 4200 4300 60  0001 C CNN
+	1    4200 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4200 4200 4150
+Wire Wire Line
+	2900 1950 4250 1950
+Wire Wire Line
+	4250 1950 4550 1950
+Connection ~ 4250 1950
+$Comp
+L Connector:TestPoint gpio0
+U 1 1 60EB03F6
+P 4550 1950
+F 0 "gpio0" V 4504 2138 50  0000 L CNN
+F 1 "tp_gpio0" V 4595 2138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 4750 1950 50  0001 C CNN
+F 3 "~" H 4750 1950 50  0001 C CNN
+	1    4550 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 60EB2075
+P 4200 4150
+F 0 "TP2" V 4154 4338 50  0000 L CNN
+F 1 "tp_gnd" V 4245 4338 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 4400 4150 50  0001 C CNN
+F 3 "~" H 4400 4150 50  0001 C CNN
+	1    4200 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0116
+U 1 1 60898350
+P 3950 6150
+F 0 "#PWR0116" H 3950 6000 50  0001 C CNN
+F 1 "+3V3" V 3965 6278 50  0000 L CNN
+F 2 "" H 3950 6150 50  0001 C CNN
+F 3 "" H 3950 6150 50  0001 C CNN
+	1    3950 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0115
+U 1 1 6063CCA5
+P 2400 6050
+F 0 "#PWR0115" H 2400 5900 50  0001 C CNN
+F 1 "+3V3" V 2415 6178 50  0000 L CNN
+F 2 "" H 2400 6050 50  0001 C CNN
+F 3 "" H 2400 6050 50  0001 C CNN
+	1    2400 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 6150 2400 6050
+Wire Wire Line
+	3250 6150 3250 6450
+Wire Wire Line
+	2400 6400 2400 6450
+Wire Wire Line
+	2400 6150 3250 6150
+Wire Wire Line
+	3950 6650 4350 6650
+Wire Wire Line
+	3950 6450 3950 6650
+Wire Wire Line
+	3950 6150 3950 6250
+$Comp
+L Device:R_Small_US R16
+U 1 1 6097B484
+P 3950 6350
+F 0 "R16" V 3745 6350 50  0000 C CNN
+F 1 "4.7k" V 3836 6350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3950 6350 50  0001 C CNN
+F 3 "~" H 3950 6350 50  0001 C CNN
+	1    3950 6350
+	-1   0    0    1   
+$EndComp
+Connection ~ 3950 6650
+Wire Wire Line
+	3750 6650 3950 6650
+Text Label 4100 6750 0    50   ~ 0
+clk_psram
+Text Label 4100 6850 0    50   ~ 0
+ram_d3
+Text Label 4100 6950 0    50   ~ 0
+ram_d2
+Text Label 4100 7050 0    50   ~ 0
+ram_d1
+Text Label 4100 7150 0    50   ~ 0
+ram_d0
+Connection ~ 2400 6150
+Wire Wire Line
+	2400 6150 2400 6200
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0122
+U 1 1 606AB749
+P 2400 6550
+F 0 "#GND0122" H 2400 6550 45  0001 L BNN
+F 1 "GND" H 2400 6480 45  0000 C CNN
+F 2 "" H 2400 6550 60  0001 C CNN
+F 3 "" H 2400 6550 60  0001 C CNN
+	1    2400 6550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 606619B7
+P 2400 6300
+F 0 "C19" V 2171 6300 50  0000 C CNN
+F 1 "0.1uf" V 2262 6300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2400 6300 50  0001 C CNN
+F 3 "~" H 2400 6300 50  0001 C CNN
+	1    2400 6300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 7450 3250 7500
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0121
+U 1 1 605CF2AA
+P 3250 7600
+F 0 "#GND0121" H 3250 7600 45  0001 L BNN
+F 1 "GND" H 3250 7530 45  0000 C CNN
+F 2 "" H 3250 7600 60  0001 C CNN
+F 3 "" H 3250 7600 60  0001 C CNN
+	1    3250 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 6750 4350 6750
+Wire Wire Line
+	3750 6850 4350 6850
+Wire Wire Line
+	3750 6950 4350 6950
+Wire Wire Line
+	3750 7050 4350 7050
+Wire Wire Line
+	3750 7150 4350 7150
+$Comp
+L Memory_RAM:ESP-PSRAM32 U7
+U 1 1 604C1306
+P 3350 6950
+F 0 "U7" H 3020 6996 50  0000 R CNN
+F 1 "ESP-PSRAM32" H 3020 6905 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3350 6350 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp-psram32_datasheet_en.pdf" H 2950 7450 50  0001 C CNN
+	1    3350 6950
+	1    0    0    -1  
+$EndComp
+Text Label 3250 3050 0    50   ~ 0
+clk_psram
+Wire Wire Line
+	2900 4050 3600 4050
+Text Label 3250 2950 0    50   ~ 0
+ram_en_n
+Text Label 4100 6650 0    50   ~ 0
+ram_en_n
+$Comp
+L Device:R_Small_US R20
+U 1 1 603A6266
+P 5600 2000
+F 0 "R20" V 5395 2000 50  0000 C CNN
+F 1 "1k" V 5486 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5600 2000 50  0001 C CNN
+F 3 "~" H 5600 2000 50  0001 C CNN
+	1    5600 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0125
+U 1 1 603A626C
+P 5500 2150
+F 0 "#GND0125" H 5500 2150 45  0001 L BNN
+F 1 "GND" H 5500 2080 45  0000 C CNN
+F 2 "" H 5500 2150 60  0001 C CNN
+F 3 "" H 5500 2150 60  0001 C CNN
+	1    5500 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2000 5500 2050
+Wire Wire Line
+	5700 2000 7000 2000
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6048BEAB
+P 4700 4300
+F 0 "TP1" H 4758 4418 50  0000 L CNN
+F 1 "TestPoint" H 4758 4327 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm" H 4900 4300 50  0001 C CNN
+F 3 "~" H 4900 4300 50  0001 C CNN
+	1    4700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0126
+U 1 1 6048C3CA
+P 4700 4600
+F 0 "#GND0126" H 4700 4600 45  0001 L BNN
+F 1 "GND" H 4700 4530 45  0000 C CNN
+F 2 "" H 4700 4600 60  0001 C CNN
+F 3 "" H 4700 4600 60  0001 C CNN
+	1    4700 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4300 4700 4500
+Text Label 3250 2850 0    50   ~ 0
+audio_clk
+Text Label 3250 2150 0    50   ~ 0
+audio_sd
+Text Label 3250 2350 0    50   ~ 0
+audio_ws
+Text Label 3250 2650 0    50   ~ 0
+capture
+Text Label 3250 2750 0    50   ~ 0
+test_led
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0127
+U 1 1 6055890B
+P 4000 -1250
+F 0 "#GND0127" H 4000 -1250 45  0001 L BNN
+F 1 "GND" H 4000 -1320 45  0000 C CNN
+F 2 "" H 4000 -1250 60  0001 C CNN
+F 3 "" H 4000 -1250 60  0001 C CNN
+	1    4000 -1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0118
+U 1 1 6056F3FB
+P 700 1600
+F 0 "#PWR0118" H 700 1450 50  0001 C CNN
+F 1 "+3V3" V 715 1728 50  0000 L CNN
+F 2 "" H 700 1600 50  0001 C CNN
+F 3 "" H 700 1600 50  0001 C CNN
+	1    700  1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R21
+U 1 1 6056F401
+P 700 1750
+F 0 "R21" V 495 1750 50  0000 C CNN
+F 1 "4.7k" V 586 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 700 1750 50  0001 C CNN
+F 3 "~" H 700 1750 50  0001 C CNN
+	1    700  1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	700  1600 700  1650
+Wire Wire Line
+	700  1950 700  1850
+$Comp
+L power:+3V3 #PWR0119
+U 1 1 605FF7C4
+P 4400 5100
+F 0 "#PWR0119" H 4400 4950 50  0001 C CNN
+F 1 "+3V3" V 4415 5228 50  0000 L CNN
+F 2 "" H 4400 5100 50  0001 C CNN
+F 3 "" H 4400 5100 50  0001 C CNN
+	1    4400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R22
+U 1 1 605FF7CA
+P 4400 5250
+F 0 "R22" V 4195 5250 50  0000 C CNN
+F 1 "1k" V 4286 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4400 5250 50  0001 C CNN
+F 3 "~" H 4400 5250 50  0001 C CNN
+	1    4400 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 5100 4400 5150
+Wire Wire Line
+	4400 5350 5200 5350
+$Comp
+L Device:C C20
+U 1 1 60390EEA
+P 5250 7150
+F 0 "C20" H 5365 7196 50  0000 L CNN
+F 1 "1uf" H 5365 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5288 7000 50  0001 C CNN
+F 3 "~" H 5250 7150 50  0001 C CNN
+	1    5250 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 7400 5250 7300
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0128
+U 1 1 60390EF3
+P 5250 7500
+F 0 "#GND0128" H 5250 7500 45  0001 L BNN
+F 1 "GND" H 5250 7430 45  0000 C CNN
+F 2 "" H 5250 7500 60  0001 C CNN
+F 3 "" H 5250 7500 60  0001 C CNN
+	1    5250 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R23
+U 1 1 60390EFC
+P 5750 6900
+F 0 "R23" H 5818 6946 50  0000 L CNN
+F 1 "470k" H 5818 6855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5750 6900 50  0001 C CNN
+F 3 "~" H 5750 6900 50  0001 C CNN
+	1    5750 6900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 6900 5250 7000
+Wire Wire Line
+	4800 6900 5250 6900
+Connection ~ 5250 6900
+Wire Wire Line
+	6200 6250 6200 6450
+Wire Wire Line
+	6200 6750 6200 6900
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0129
+U 1 1 604A1429
+P 6200 7650
+F 0 "#GND0129" H 6200 7650 45  0001 L BNN
+F 1 "GND" H 6200 7580 45  0000 C CNN
+F 2 "" H 6200 7650 60  0001 C CNN
+F 3 "" H 6200 7650 60  0001 C CNN
+	1    6200 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 6900 5650 6900
+Wire Wire Line
+	6200 6900 5850 6900
+Connection ~ 6200 6900
+Wire Wire Line
+	6200 6900 6200 6950
+Wire Wire Line
+	9250 -2000 9350 -2000
+Wire Wire Line
+	9350 -2000 9350 -1700
+Wire Wire Line
+	9350 -1050 9350 -850
+$Comp
+L EVQ-P7J01P:EVQ-P7J01P SW2
+U 1 1 6031BC31
+P 9350 -1350
+F 0 "SW2" H 9350 -1123 50  0000 C CNN
+F 1 "EVQ-P7J01P" H 9350 -1214 50  0000 C CNN
+F 2 "guardiancam:EVQ-P7J01P" H 9350 -1350 50  0001 L BNN
+F 3 "Manufacturer Recommendation" H 9350 -1350 50  0001 L BNN
+F 4 "Panasonic" H 9350 -1350 50  0001 L BNN "Field4"
+	1    9350 -1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L guardianCam_Wifi-rescue:GND-PocketBeagle #GND0108
+U 1 1 6125723D
+P 9350 -750
+F 0 "#GND0108" H 9350 -750 45  0001 L BNN
+F 1 "GND" H 9350 -820 45  0000 C CNN
+F 2 "" H 9350 -750 60  0001 C CNN
+F 3 "" H 9350 -750 60  0001 C CNN
+	1    9350 -750
+	1    0    0    -1  
+$EndComp
+Connection ~ 9350 -1700
+Wire Wire Line
+	9350 -1700 9350 -1650
+$Comp
+L Device:R_Small_US R24
+U 1 1 6062A7A7
+P 10150 -2000
+F 0 "R24" H 10218 -1954 50  0000 L CNN
+F 1 "470k" H 10218 -2045 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10150 -2000 50  0001 C CNN
+F 3 "~" H 10150 -2000 50  0001 C CNN
+	1    10150 -2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10150 -1900 10150 -1700
+Wire Wire Line
+	9350 -1700 10150 -1700
+Wire Wire Line
+	10150 -2100 10150 -2200
+Connection ~ 10150 -2200
+Wire Wire Line
+	10150 -2200 10550 -2200
+$EndSCHEMATC
